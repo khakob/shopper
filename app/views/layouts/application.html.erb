@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Shopper</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>Shopper</title>
+  <%= csrf_meta_tags %>
 
-  <body>
-    <p>
-      <%= link_to "Home", root_path %> |
-      <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
-    </p>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <hr />
-    <%= yield %>
-  </body>
+<body>
+  <p>
+    <%= link_to "Home", root_path %> |
+    <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
+  </p>
+
+  <hr />
+
+  <%= yield %>
+</body>
+
 </html>
