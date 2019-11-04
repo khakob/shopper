@@ -2,8 +2,14 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
-gem 'pry'
+gem 'bootstrap'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'faker'
+gem 'jquery-rails'
+gem 'popper_js'
+gem 'pry'
+gem 'simple_form'
+gem 'tether-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -51,6 +57,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rb-readline'
+  gem 'rails-erd'
 end
 
 

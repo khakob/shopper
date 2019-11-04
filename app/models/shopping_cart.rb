@@ -1,5 +1,4 @@
 class ShoppingCart
-
   delegate :sub_total, to: :order
 
   def initialize(token:)
